@@ -1,0 +1,311 @@
+//console.log('Hello world')
+
+
+//console.log(5+10)
+
+//var a = 10;
+//var b = 5;
+//console.log(a+b)
+
+//Data Type
+//1. Number ---> Integer(45, 58, -85) and Float(12.123, -56.2589845)
+//2. String  ---> Any data inside ' ' or " "
+//3. Boolean ---> true or false
+
+//var a = "10";
+//console.log(typeof("true"))
+
+
+
+//Operators
+//1. Arithmetic Operators ---> +,-, /, *, %, **
+//% ---> calculating remainders
+//var a = "10.1234";
+//var b = "4.12";
+
+//console.log("Before", typeof(a), typeof(b))
+
+
+
+
+//var c = parseFloat(a)
+//var d = parseFloat(b)
+
+//console.log("After", typeof(c), typeof(d))
+
+//var sum = c+d;
+//console.log(sum.toFixed(3))
+
+
+//2. Logical Operators  ----> &&    ||     !
+
+//      input1  input2      &&      ||
+//      true    true        true    true
+//      true    false       false   true
+//      false   true        false   true
+//      false   false       false   false
+
+//  !true   ---> false
+//!false -----> true
+
+//3. == and ===
+
+//var a = 10;
+//var b = "10"
+
+//console.log(a===b)
+
+//== will check for equality of value
+//=== will check for equality of value and datatype
+
+//console.log(a!==b)
+
+//Multi line comment
+
+/*dsbdkjsabkd
+asdbsajbdkas
+ndjsahbdkas*/
+
+//4. Increment and Decrement Operator
+
+//++
+//--
+
+//var a = 10;
+
+//console.log(a++, a++, ++a, ++a, a--)
+//a = 13      10   11   13   14   14
+
+//console.log(a++, ++a, a--, --a, ++a, a--)
+//a=10        10   12   12   10   11   11
+
+
+
+//Decision Making Statements
+
+//1. Find the greatest of 2 numbers.
+
+//var a = 10;
+//var b = 10;
+//if(a>b)
+//{
+  //  console.log('A is greater')
+//}
+//else if(b>a)
+//{
+//    console.log('B is greater')
+//}
+//else
+//{
+  //  console.log('Both are equall')
+//}
+
+//2. Find the greatest of 3 numbers.
+//var a = 50;
+//var b = 50;
+//var c = 10;
+//if(a>b && a>c)
+//{
+  //  console.log('A is greater')
+//}
+//else if(b>a && b>c)
+//{
+    //console.log('B is greater')
+//}
+//else if(c>a && c>b)
+//{
+   // console.log('C is greater')
+//}
+//else if(a==b && a>c)
+//{
+   // console.log('A and B are equall and greater than C')
+//}
+//else if(a==c && a>b)
+//{
+    //console.log('A and C are equall and greater than B')
+//}
+//else if(c==b && c>a)
+//{
+    //console.log('C and B are equall and greater than A')
+//}
+//else
+//{
+    //console.log('All are equall')
+//}
+
+
+//Looping Statements
+//      1       2   4
+//for(var i = 1;i<=5; i++)
+//{
+    //3
+  //  console.log('Hello World', i)
+//}
+
+
+//3. Find the sum of N natural numbers N=5 ----> 1+2+3+4+5
+
+//var sum = 0;
+//for(var i = 1;i<=5;i++)
+//{
+    //sum = sum + i
+    //console.log(sum)
+//}
+//console.log(sum)
+
+
+//4. Find the Factorial of a given number N=5 ---> 1*2*3*4*5
+
+//var sum = 1;
+//for(var i = 1;i<=5;i++)
+//{
+  //  sum = sum * i
+    //console.log(sum)
+//}
+//console.log(sum)
+
+
+//Hoisting
+//console.log(a)
+//var a = 10;
+//console.log(a)
+
+
+
+//let a = 10;
+//console.log(a)
+
+
+//if(10>8)
+//{
+  //  var a = 10;//Global scope
+//}
+
+//console.log(a)
+
+//if(10>8)
+//{
+    //let a = 10;
+    //console.log(a)//Local scope
+//}
+//console.log(a)
+
+//const a = 10;
+//console.log(a)
+
+
+//let mark1 = 10;
+//let mark2 = 9
+//let mark3 = 12;
+
+//Array elament always start from index 0.
+
+//let mark = [10,9,12,13,10,8,15,17,18]
+//console.log(mark[6])
+
+//for(let i = 0;i<mark.length;i++)
+//{
+    //console.log(mark[i])
+//}
+
+
+
+//Find the Sum of all the array elements
+
+//let mark = [10,9,12,13,10,8,15,17,18]
+//let sum = 0;
+//for(let i = 0;i<mark.length;i++)
+//{
+    //sum = sum + mark[i]
+    //sum += mark[i]
+//}
+//console.log(sum)
+
+
+//console.log(mark[mark.length-1])
+
+//Find the largest number in a given array
+
+//let mark = [10,9,12,13,20,8,15,17,18]
+
+//let max = mark[0];
+
+//for(let i=1;i<mark.length;i++)
+//{
+    //console.log('Max:',max,'Current:',mark[i])
+    //if(mark[i]>max)
+        //max = mark[i]
+//}
+//console.log(max)
+
+
+//let a = [10,11,17,9]
+
+//a.push(45)
+//a.push(1)
+//a.push("hello")
+//console.log(a)
+
+//a.pop()
+//a.pop()
+//console.log(a)
+
+//let a = [10,11,17,19,13,90,41]
+
+//console.log(a.slice(1))
+
+ //a.splice(a.indexOf(90),1)
+
+
+//a.splice(1,0,100,101)
+ 
+ //console.log(a)
+ 
+ 
+//let mark = [10,9,8]
+//let name = ["Raj","Nag", "Sai"]
+//let roll = [101,102,103]
+
+
+//JSON
+//let details = [{
+  //              name:"Raj",
+    //            roll:101,
+      //          mark:10,
+        //        mobile:[54646464,878989498],
+          //      address: "121, Dubai Cross Street, Dubai Main Road , Dubai"
+            //  },
+              //{
+                //name:"Nag",
+//                roll:102,
+  //              mark:7,
+    //            address: "122, Dubai Cross Street, Dubai Main Road , Dubai"
+      //        },
+        //      {
+          //      name:"Sai",
+            //    roll:103,
+              //  mark:12,
+//                address:{
+  //                      doorNo:"56",
+    //                    street:"Dubai Cross Street",
+      //                  area:"Dubai Main Road",
+        //                city:"Dubai",
+          //              zipcode:"123456"
+            //        }
+              //}
+              //]
+
+//console.log(details[2].address.area)
+
+//let str = "Hello World"
+//console.log(str.length)
+//console.log(str.split(" "))
+
+
+//let url = "how+to+pin+location+with+lat+and+lang+using+react"
+//let splitedArray = url.split("+")
+//console.log(splitedArray.join("%20"))
+
+
+//let url = "developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice"
+//console.log(url.split(""))
